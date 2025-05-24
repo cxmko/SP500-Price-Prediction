@@ -36,7 +36,7 @@ This project focuses on predicting the S&P 500 stock index prices using Long Sho
 │   └── train_evaluate_pytorch.py # Contains functions for training and evaluating models
 │               
 └── requirements.txt            # Python package dependencies 
-
+```
 ## Setup
 
 ### Prerequisites
