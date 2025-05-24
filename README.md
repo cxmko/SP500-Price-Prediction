@@ -46,8 +46,8 @@ This project focuses on predicting the S&P 500 stock index prices using Long Sho
 ### Installation
 1.  **Clone the repository:**
     ```bash
-    git clone <your-repository-url>
-    cd <repository-name>
+    git clone https://github.com/cxmko/SP500-Price-Prediction
+    cd SP500-Price-Prediction
     ```
 2.  **Install dependencies:**
     ```bash
