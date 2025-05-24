@@ -1,0 +1,38 @@
+===== TRADING SIMULATION RESULTS =====
+Initial Capital: $1000.00
+confidence val : 0.4%
+
+LSTM Model Strategy:
+Final Capital: $891.66
+Total Return: -10.83%
+Total P&L: $-108.34
+Sharpe Ratio: -0.64
+Max Drawdown: 15.60%
+
+CNN Model Strategy:
+Final Capital: $759.02
+Total Return: -24.10%
+Total P&L: $-240.98
+Sharpe Ratio: -1.46
+Max Drawdown: 28.78%
+
+Buy & Hold Strategy:
+Final Capital: $1333.22
+Total Return: 33.32%
+Total P&L: $333.22
+Sharpe Ratio: 1.63
+Max Drawdown: 10.28%
+
+===== TRADE STATISTICS =====
+
+LSTM Model:
+Total Trades: 375
+Long Positions: 106 (28.3%)
+Short Positions: 211 (56.3%)
+Successful Trades: 143 (38.1%)
+
+CNN Model:
+Total Trades: 375
+Long Positions: 41 (10.9%)
+Short Positions: 322 (85.9%)
+Successful Trades: 159 (42.4%)

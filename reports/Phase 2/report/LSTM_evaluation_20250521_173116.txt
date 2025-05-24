@@ -1,0 +1,36 @@
+Rapport d'évaluation pour LSTM
+Date: 2025-05-21 17:31:16
+
+Paramètres du modèle:
+- model_type: LSTM
+- input_size: 4
+- hidden_size: 64
+- num_layers: 2
+- dropout: 0.2
+- optimizer: Adam
+- learning_rate: 0.0001
+- criterion: MSELoss
+- epochs: 50
+- batch_size: 64
+- sequence_length: 60
+- prediction_horizon: 1
+- random_seed: 35
+- target_col: Close
+- features_list: ['Open', 'High', 'Low', 'Volume']
+- target_type_for_training: denoised_scaled
+- loaded_weights: True
+
+Loss (on scaled, denoised targets): 0.0002
+
+Métriques d'évaluation (vs Denoised Target):
+- MSE: 4396.2266
+- RMSE: 66.3040
+- MAE: 50.0548
+- R²: 0.9876
+
+Métriques d'évaluation (vs Original Target):
+- MSE: 5863.3332
+- RMSE: 76.5724
+- MAE: 59.2559
+- R²: 0.9836
+

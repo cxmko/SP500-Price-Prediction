@@ -1,0 +1,38 @@
+Rapport d'évaluation pour CNN
+Date: 2025-05-22 14:43:39
+
+Paramètres du modèle:
+- model_type: CNN (Stabilized)
+- input_channels: 4
+- sequence_length: 60
+- cnn_filters: [32, 64, 128]
+- cnn_kernel_sizes: [3, 3, 3]
+- cnn_pool_sizes: [2, 2, 2]
+- cnn_dropout: 0.4
+- optimizer: AdamW
+- learning_rate_max (OneCycleLR): 2.5e-05
+- optimizer_betas: (0.9, 0.999)
+- criterion: MSELoss
+- epochs: 50
+- batch_size: 64
+- prediction_horizon: 1
+- random_seed: 35
+- target_col: Close
+- features_list: ['Open', 'High', 'Low', 'Volume']
+- target_type_for_training: denoised_scaled
+- loaded_weights: True
+
+Loss (on scaled, denoised targets): 0.0098
+
+Métriques d'évaluation (vs Denoised Target):
+- MSE: 269689.1250
+- RMSE: 519.3160
+- MAE: 412.7257
+- R²: 0.2460
+
+Métriques d'évaluation (vs Original Target):
+- MSE: 269689.0709
+- RMSE: 519.3160
+- MAE: 412.7257
+- R²: 0.2460
+
